@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de texto - ONE</title>
+    <link rel="icon" type="image/x-icon" href="./recursos/logo_alura_light.svg">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="barra_navegacion_div">
+            <a href="./index.html">
+                <img src="./recursos/logo_alura.svg" alt="logo_alura">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Proximamente...</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <label for="texto_input" class="label_texto_input">Ingrese el texto aquí</label>
+            <textarea cols="70" rows="10" id="texto_input" class="texto_input"></textarea>
+        </div>
+        <p class="details_texto_input">&#9989;Sólo letras minúsculas y sin acentos.</p>
+        <input type="submit" value="Encriptar" class="boton_encriptar">
+        <input type="submit" value="Desencriptar" class="boton_desencriptar">
+        <div>
+            <label for="texto_output"></label>
+            <textarea cols="70" rows="25" id="texto_output" class="texto_output" placeholder="Ningún mensaje fue encontrado. 
+Ingresa el texto que desea encriptar o desencriptar."></textarea>
+        </div>
+    </main>
+    <footer>
+        <p>&copy Sitio creado por Maria Luisa Manzano</p>
+    </footer>
 </body>
 </html>
