@@ -13,7 +13,7 @@
     <header>
         <div class="barra_navegacion_div">
             <a href="./index.html">
-                <img src="./recursos/logo_alura.svg" alt="logo_alura">
+                <img src="./recursos/logo_alura.svg" alt="logo_alura" class="logo">
             </a>
             <nav>
                 <ul>
@@ -23,18 +23,21 @@
         </div>
     </header>
     <main>
-        <div>
+        <section>
             <label for="texto_input" class="label_texto_input">Ingrese el texto aquí</label>
             <textarea cols="70" rows="10" id="texto_input" class="texto_input"></textarea>
-        </div>
-        <p class="details_texto_input">&#9989;Sólo letras minúsculas y sin acentos.</p>
-        <input type="submit" value="Encriptar" class="boton_encriptar">
-        <input type="submit" value="Desencriptar" class="boton_desencriptar">
+        </section>
         <div>
+            <p class="details_texto_input">&#9989;Sólo letras minúsculas y sin acentos.</p>
+            <input type="submit" value="Encriptar" class="boton_encriptar">
+            <input type="submit" value="Desencriptar" class="boton_desencriptar">
+        </div>
+        <section>
             <label for="texto_output"></label>
             <textarea cols="70" rows="25" id="texto_output" class="texto_output" placeholder="Ningún mensaje fue encontrado. 
 Ingresa el texto que desea encriptar o desencriptar."></textarea>
-        </div>
+            <button class="copiar">Copiar</button>
+        </section>
     </main>
     <footer>
         <p>&copy Sitio creado por Maria Luisa Manzano</p>

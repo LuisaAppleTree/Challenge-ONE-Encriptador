@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+*{
+
+}
 
 body {
     background-image: url("./recursos/fondo.png");
@@ -19,6 +22,10 @@ header {
     width: 100vw;
     height: 10vh;
     margin: 0 auto;
+}
+
+.logo {
+    width: 10%;
 }
 
 nav {
@@ -49,6 +56,11 @@ nav a:active {
 }
 /*termina navbar*/
 /*inicia main*/
+main {
+    display: flexbox;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
 
 .label_texto_input {
     display: inline-block;
@@ -67,6 +79,17 @@ nav a:active {
     position: absolute;
     top: 30vh;
     left: 10vw;
+    border: none;
+    background-color: transparent;
+    text-transform: lowercase;
+    color: rgb(56, 32, 120);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.texto_input:focus {
+    outline: none;
 }
 
 .details_texto_input {
@@ -99,6 +122,7 @@ nav a:active {
 .boton_encriptar:hover {
     background-color: rgb(255, 170, 0);
     transform: scale(1.20);
+    box-shadow: 5px 5px 10px black;
 }
 
 .boton_desencriptar {
@@ -121,6 +145,7 @@ nav a:active {
 .boton_desencriptar:hover {
     background-color: rgb(255, 170, 0);
     transform: scale(1.20);
+    box-shadow: 5px 5px 10px black;
 }
 
 .texto_output {
@@ -129,7 +154,46 @@ nav a:active {
     position:absolute;
     top: 30vh;
     right: 10vw;
+    border-radius: 10%;
+    background-color: white;
+    background-image: url(./recursos/click.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    border: none;
+    text-transform: lowercase;
 }
+
+.texto_output:focus {
+    outline-color: blue;
+}
+
+::placeholder {color: blue;}
+
+.copiar {
+    position: absolute;
+    top:70vh;
+    right: 30vw;
+    width: 10%;
+    padding: 15px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 201, 24);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.copiar:hover {
+    background-color: rgb(255, 170, 0);
+    transform: scale(1.10);
+    box-shadow: 5px 5px 10px black;
+}
+
 
 /*termina main*/
 /*empieza footer*/
