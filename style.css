@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
-*{
-
-}
-
 body {
     background-image: url("./recursos/fondo.png");
     background-size: 40%;
@@ -58,44 +54,49 @@ nav a:active {
 /*inicia main*/
 main {
     display: flexbox;
+    margin-top: 100px;
     margin-bottom: 100px;
     margin-left: 20px;
+    margin-right: 20px;
+}
+
+.input_area {
+    margin: 0 10vh;
 }
 
 .label_texto_input {
-    display: inline-block;
     color: rgb(0, 0, 0);
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     font-size: 2rem;
-    position:absolute;
-    top: 25vh;
-    left: 10vw;
 }
 
 .texto_input {
-    display: inline-block;
+    display: block;
     resize: none;
-    position: absolute;
-    top: 30vh;
-    left: 10vw;
     border: none;
     background-color: transparent;
     text-transform: lowercase;
-    color: rgb(56, 32, 120);
+    color: rgb(54, 21, 146);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .texto_input:focus {
-    outline: none;
+    outline-color: red;
+    background-color: white;
+}
+
+.añadidos_input {
+    display: flex;
+    margin-top: 50px ;
 }
 
 .details_texto_input {
-    position: absolute;
-    top:55vh;
-    left: 10vw;
+    display: block;
     color: rgb(0, 0, 0);
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -103,9 +104,6 @@ main {
 }
 
 .boton_encriptar {
-    position: absolute;
-    top:60vh;
-    left: 10vw;
     width: 10%;
     padding: 15px 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -116,7 +114,8 @@ main {
     border: none;
     border-radius: 5px;
     transition: 1s all;
-    cursor: pointer;
+    cursor:pointer;
+    margin: 50px 20px 0 -280px;
 }
 
 .boton_encriptar:hover {
@@ -126,9 +125,6 @@ main {
 }
 
 .boton_desencriptar {
-    position: absolute;
-    top:60vh;
-    left: 25vw;
     width: 10%;
     padding: 15px 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -140,6 +136,7 @@ main {
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+    margin: 50px 20px 0 100px;
 }
 
 .boton_desencriptar:hover {
@@ -154,7 +151,6 @@ main {
     position:absolute;
     top: 30vh;
     right: 10vw;
-    border-radius: 10%;
     background-color: white;
     background-image: url(./recursos/click.png);
     background-size: 300px;
@@ -162,7 +158,7 @@ main {
     background-position-x: right;
     background-position-y: bottom;
     border: none;
-    text-transform: lowercase;
+    text-orientation: sideways-right;
 }
 
 .texto_output:focus {
