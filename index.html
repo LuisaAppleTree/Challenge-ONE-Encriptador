@@ -25,14 +25,14 @@
     <main>
         <section class="input_area">
             <label for="texto_input" class="label_texto_input">Ingrese el texto aquí</label>
-            <form action="" id="form">
-                <textarea cols="50" rows="5" class="texto_input" name="texto_input"></textarea>
+            <div>
+                <textarea cols="50" rows="5" id="txtInput" class="texto_input" name="texto_input"></textarea>
                 <div class="añadidos_input">
                     <p class="details_texto_input">&#9989;Sólo letras minúsculas y sin acentos.</p>
-                        <input type="submit" value="Encriptar" class="boton_encriptar">
-                        <input type="submit" value="Desencriptar" class="boton_desencriptar">
+                        <button class="boton_encriptar" onclick="encriptarBoton()">Encriptar</button>
+                        <button class="boton_desencriptar" onclick="desencriptarBoton()">Desencriptar</button>
                 </div>
-            </form>
+            </div>
         </section>
 
         <section>
