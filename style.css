@@ -69,14 +69,14 @@ main {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight:bolder;
 }
 
 .texto_input {
-    display: block;
+    display: flex;
     resize: none;
     border: none;
-    background-color: transparent;
+    background-color: white;
     text-transform: lowercase;
     color: rgb(54, 21, 146);
     font-family: 'Source Sans Pro', sans-serif;
@@ -88,7 +88,6 @@ main {
 
 .texto_input:focus {
     outline-color: red;
-    background-color: white;
 }
 
 .añadidos_input {
@@ -148,19 +147,19 @@ main {
 }
 
 .texto_output {
-    display: inline-block;
+    position: relative;
+    right: -45vw;
+    top: -40vh;
     resize: none;
-    position:absolute;
-    top: 30vh;
-    right: 10vw;
     background-color: white;
     background-image: url(./recursos/click.png);
-    background-size: 300px;
+    background-size: 100px;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     border: none;
     text-orientation: sideways-right;
+    margin-left: 200px;
 }
 
 .texto_output:focus {
